@@ -15,11 +15,6 @@ gem "pg", "~> 1.1"
 #Use Faker
 gem 'faker', '~> 3.2'
 
-#Use cssbundling-rails
-gem 'cssbundling-rails', '~> 1.1', '>= 1.1.2'
-
-#Use jsbundling-rails
-gem 'jsbundling-rails', '~> 1.1', '>= 1.1.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
