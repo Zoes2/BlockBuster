@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlockBuster</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <style>
+      body {
+        background-color: #FFB6C1; /* color rosa claro */
+      }
+      
+      .container {
+        background-color: #FFFFFF; /* color blanco */
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <%= render "shared/navbar" %>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
